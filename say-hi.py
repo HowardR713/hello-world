@@ -10,41 +10,55 @@ def mathify( d1 ):
 
 # Get input numbers:
 s1 = "-6543.21"
-t1 = "42"
+t1 = "42.00001"
 
 # Process everything:
 d1 = math_lib.mymath( s1 )
 d2 = math_lib.mymath( t1 )
 
-# Process s1:
-
+# Let's try some math:
 # Print out everything:
 print("=======================")
 print("Hello world!")
-mTuple = mathify( d1 )
-print( d1.getDisplay() )
-print( "sign", mTuple[0] )
-print( "integer", mTuple[1] )
-print( "exponent", mTuple[2] )
-
+print("Adding the two numbers:")
+d1.dump()
 print("-----------------------")
-mTuple = mathify( d2 )
-print(d2.getDisplay())
-print( "sign", mTuple[0] )
-print( "integer", mTuple[1] )
-print( "exponent", mTuple[2] )
+d2.dump()
 print("-----------------------")
-
-# Let's try some math:
-print("adding two numbers:")
-print( d1.getDisplay() )
-s2 = '.123'
-print( s2 )
-d3 = d1.add( s2 )
-mTuple = mathify( d3 )
-print( "sign", mTuple[0] )
-print( "integer", mTuple[1] )
-print( "exponent", mTuple[2] )
+d3 = d1.add( d2 )
+d3.dump()
+print("-----------------------")
+print("Subtraction:")
+d1.dump()
+print("-----------------------")
+d2.dump()
+print("-----------------------")
+d4 = d1.subtract( d2 )
+d4.dump()
+print("-----------------------")
+print("Multiplication:")
+s1 = "-300000000000000"
+t1 = "0.0005"
+d1 = math_lib.mymath( s1 )
+d2 = math_lib.mymath( t1 )
+d1.dump()
+print("-----------------------")
+d2.dump()
+print("-----------------------")
+d3 = d1.multiply( d2 )
+d3.dump()
+print("-----------------------")
+print("Division:")
+s1 = "208.104"
+t1 = "5.2"
+d1 = math_lib.mymath( s1 )
+d2 = math_lib.mymath( t1 )
+d1.dump()
+print("-----------------------")
+d2.dump()
+print("-----------------------")
+d3 = d1.divide( d2 )
+d3.dump()
+print("-----------------------")
 print ("goodbye world!")
 print("=======================")
-
