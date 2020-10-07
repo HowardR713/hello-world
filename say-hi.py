@@ -1,4 +1,6 @@
-# Exercise the math library.  
+# -----------------------------------------------------------------------------
+# Exercise the math library.
+# -----------------------------------------------------------------------------
 # Get the decimal libs:
 import math_lib
 
@@ -36,12 +38,14 @@ def execOps(op,t1,t2):
     else:
         msg     = "ERROR:  Invalid operation: " + op
         isError = 1
+
+    print( msg, "-----------------------")
+    print("Term 1:  --------------")
+    d1.dump()
+    print(d1)
+    print("Term 2:  --------------")
+    d2.dump()
     if (isError==0):
-        print( msg, "-----------------------")
-        print("Term 1:  --------------")
-        d1.dump()
-        print("Term 2:  --------------")
-        d2.dump()
         print( ansMsg, "-----------------------")
         d3.dump()
     else:
@@ -79,3 +83,6 @@ execOps("bs",t1,t2)
 
 print ("goodbye world!")
 print("=======================")
+
+exit(0)
+# eof( say-hi.py ) ------------------------------------------------------------

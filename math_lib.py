@@ -44,6 +44,15 @@ class mymath:
         print( "Exponent: [", self.mExp, "]" )
         print( "Integer:  [", self.mInt, "]" )
 
+    def __repr__(self):
+        msg = f"""
+Display:  [{self.getDisplay()}]
+Sign:     [{self.mSign}]
+Exponent: [{self.mExp}]
+Integer:  [{self.mInt}]
+                """
+        return msg
+
     #---------------------------------------
     # Given a sign value return a sign multiplier:
     # if 0 ==> 1, if 1 == -1
