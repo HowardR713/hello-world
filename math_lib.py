@@ -1,6 +1,19 @@
 # Get the math library we need:
-from decimal import *
-
+from decimal import Decimal
+# 
+# TODO:
+#- Wrapper class should handle enforcing 4 decimal places,
+#  cents ---- our integer value should represent a 2-decimal number
+#    this represents the "cent" value of the number
+#    an amount is always in pennies.
+#- Report method to capture/dump a complete transaction...
+#  spits out all values
+#-----------
+#  Default rounding might be round half-up.
+#  need the ability to change this to any of the other
+#  orthodox rounding methods.
+#-----------
+#  
 class mymath:
     '''This is a docstring.  I have created a new class'''
     #---------------------------------------

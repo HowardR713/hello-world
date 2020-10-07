@@ -41,13 +41,12 @@ def execOps(op,t1,t2):
 
     print( msg, "-----------------------")
     print("Term 1:  --------------")
-    d1.dump()
     print(d1)
     print("Term 2:  --------------")
-    d2.dump()
+    print(d1)
     if (isError==0):
         print( ansMsg, "-----------------------")
-        d3.dump()
+        print(d1)
     else:
         print(msg)
     print("-----------------------")
