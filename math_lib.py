@@ -31,7 +31,7 @@ class mymath:
 
     #---------------------------------------
     # Return the display value for the
-    # current instnace:
+    # current instance:
     #---------------------------------------
     def getDisplay(self):
         return self.dispTerm1

@@ -43,10 +43,10 @@ def execOps(op,t1,t2):
     print("Term 1:  --------------")
     print(d1)
     print("Term 2:  --------------")
-    print(d1)
+    print(d2)
     if (isError==0):
         print( ansMsg, "-----------------------")
-        print(d1)
+        print(d3)
     else:
         print(msg)
     print("-----------------------")
